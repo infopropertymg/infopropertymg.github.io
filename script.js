@@ -18,3 +18,4 @@ zoomImages.forEach((image) => {
     image.addEventListener('mouseleave', () => {
         zoomedImageContainer.style.display = 'none'; // Hide the zoomed image container
     });
+});
