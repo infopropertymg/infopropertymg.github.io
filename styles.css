@@ -94,6 +94,27 @@ section {
     border-radius: 10px;
 }
 
+/* Responsive Styles for Smartphones */
+@media (max-width: 768px) {
+    #zoomed-image-container {
+        left: 0;
+        width: 100%; /* Cover the entire screen on smaller devices */
+    }
+
+    #zoomed-image {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    .property {
+        width: calc(50% - 20px); /* Adjust property width for smaller screens */
+    }
+
+    .property-images {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+}
+
 footer {
     background-color: #333;
     color: #fff;
