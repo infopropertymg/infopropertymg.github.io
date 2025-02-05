@@ -13,7 +13,7 @@ header {
 }
 
 .logo img {
-    max-width: 150px; /* Adjust the size of the logo */
+    max-width: 100px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -51,11 +51,19 @@ section {
     padding: 10px;
     width: calc(33.333% - 20px);
     box-sizing: border-box;
+    text-align: center;
 }
 
-.property img {
+.property-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Space between images */
+}
+
+.property-images img {
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 footer {
