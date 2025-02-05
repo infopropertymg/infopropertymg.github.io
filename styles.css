@@ -1,3 +1,4 @@
+/* Existing styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -64,17 +65,35 @@ section {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.property-images img:hover {
+    transform: scale(1.1); /* Zoom effect */
+    opacity: 0.8; /* Slight fade */
 }
+
+/* Zoomed Image Container */
+#zoomed-image-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#zoomed-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -91,7 +110,7 @@ footer a {
 }
 
 .instagram-icon {
-    width: 24px; /* Adjust the size of the Instagram icon */
+    width: 24px;
     height: 24px;
     vertical-align: middle;
     margin-left: 5px;
