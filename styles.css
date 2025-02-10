@@ -194,3 +194,25 @@ footer a:hover {
     vertical-align: middle;
     margin-left: 5px;
 }
+/* Home Section Styles */
+#home {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center-align text */
+}
+
+#home h2 {
+    font-family: 'Georgia', serif; /* Classic serif font */
+    font-size: 2.5rem; /* Larger font size for heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+#home p {
+    font-family: 'Georgia', serif; /* Classic serif font */
+    font-size: 1.2rem; /* Slightly larger font size for paragraph */
+    font-style: italic; /* Italic text for a classic feel */
+    margin: 0; /* Remove default margin */
+}
