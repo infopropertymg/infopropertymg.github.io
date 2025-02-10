@@ -261,7 +261,7 @@ header h1 {
 
 /* Make Logo Bigger */
 .logo img {
-    width: 150px; /* Adjust the width */
+    width: 250px; /* Adjust the width */
     height: auto; /* Maintain aspect ratio */
 }
 
