@@ -250,3 +250,18 @@ footer a:hover {
     z-index: 1000;
     transition: opacity 0.5s ease;
 }
+/* Make Property Invest M&G Bigger & White */
+header h1 {
+    font-size: 36px; /* Increase the font size */
+    color: white; /* Change text color to white */
+    font-weight: bold; /* Make it bold */
+    text-transform: uppercase; /* Optional: Uppercase for better visibility */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Adds a slight shadow for readability */
+}
+
+/* Make Logo Bigger */
+.logo img {
+    width: 150px; /* Adjust the width */
+    height: auto; /* Maintain aspect ratio */
+}
+
