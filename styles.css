@@ -7,9 +7,10 @@ body {
     color: #ffffff; /* White text */
 }
 
+/* Header Styles */
 header {
-    background-color: #1f1f1f; /* Darker header background */
-    color: #ffffff; /* White text */
+    background-color: #007BFF; /* Blue background */
+    color: #000000; /* Black text */
     padding: 10px 0;
     text-align: center;
 }
@@ -31,14 +32,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff; /* White text */
+    color: #000000; /* Black text */
     text-decoration: none;
+    font-weight: bold; /* Make links bold */
 }
 
 nav ul li a:hover {
-    color: #007BFF; /* Blue hover effect */
+    color: #ffffff; /* White text on hover */
 }
 
+/* Section Styles */
 section {
     padding: 20px;
     margin: 20px;
@@ -167,8 +170,8 @@ section {
 
 /* Footer Styles */
 footer {
-    background-color: #1f1f1f; /* Darker footer background */
-    color: #ffffff; /* White text */
+    background-color: #007BFF; /* Blue background */
+    color: #000000; /* Black text */
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -177,12 +180,13 @@ footer {
 }
 
 footer a {
-    color: #ffffff; /* White text */
+    color: #000000; /* Black text */
     text-decoration: none;
+    font-weight: bold; /* Make links bold */
 }
 
 footer a:hover {
-    color: #007BFF; /* Blue hover effect */
+    color: #ffffff; /* White text on hover */
 }
 
 .instagram-icon {
