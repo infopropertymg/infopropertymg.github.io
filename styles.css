@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    font-size: 16px; /* Base font size */
 }
 
 header {
@@ -22,21 +23,21 @@ header {
 /* Social media links styling */
 .social-links {
     position: absolute;
-    top: 2px;
-    right: 2px;
+    top: 10px;
+    right: 10px;
     display: flex;
-    gap: 1px; /* Reduce space between icons */
+    gap: 8px; /* Space between icons */
+    align-items: center; /* Align icons vertically with text */
 }
 
 .social-links .social-link img {
-    width: 2px; /* Very small size for icons */
-    height: 2px; /* Ensure height matches width for square icons */
+    width: 1em; /* Match icon size to text size */
+    height: 1em; /* Ensure height matches width for square icons */
     transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 .social-links .social-link:hover img {
     transform: scale(1.1); /* Slightly enlarge icons on hover */
-}
 }
 
 nav ul {
