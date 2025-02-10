@@ -20,3 +20,20 @@ function closeFullScreen() {
     const fullscreenViewer = document.getElementById('fullscreen-viewer');
     fullscreenViewer.style.display = 'none';
 }
+// Hide icons after 6 seconds
+setTimeout(() => {
+    document.getElementById("floating-icons").classList.add("hidden");
+    document.getElementById("show-icons-btn").style.display = "block";
+}, 6000);
+
+// Function to show icons when button is clicked
+function showIcons() {
+    document.getElementById("floating-icons").classList.remove("hidden");
+    document.getElementById("show-icons-btn").style.display = "none";
+
+    // Hide again after 6 seconds
+    setTimeout(() => {
+        document.getElementById("floating-icons").classList.add("hidden");
+        document.getElementById("show-icons-btn").style.display = "block";
+    }, 6000);
+}
