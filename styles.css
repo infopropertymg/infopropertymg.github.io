@@ -113,3 +113,35 @@ footer a {
     vertical-align: middle;
     margin-left: 5px;
 }
+/* Full-screen image viewer */
+.fullscreen-viewer {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+    z-index: 1000; /* Ensure it's on top of everything */
+    text-align: center;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 5%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ccc;
+}
