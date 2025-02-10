@@ -20,3 +20,15 @@ function closeFullScreen() {
     const fullscreenViewer = document.getElementById('fullscreen-viewer');
     fullscreenViewer.style.display = 'none';
 }
+function toggleMap() {
+    var map = document.getElementById("map-container");
+    var button = document.getElementById("toggle-map-btn");
+
+    if (map.classList.contains("hidden")) {
+        map.classList.remove("hidden");
+        button.textContent = "Hide Map";
+    } else {
+        map.classList.add("hidden");
+        button.textContent = "Show Map";
+    }
+}
