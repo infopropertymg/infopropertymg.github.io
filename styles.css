@@ -1,13 +1,15 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #1f1f1f; /* Darker header background */
+    color: #ffffff; /* White text */
     padding: 10px 0;
     text-align: center;
 }
@@ -29,15 +31,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff; /* White text */
     text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Blue hover effect */
 }
 
 section {
     padding: 20px;
     margin: 20px;
-    background-color: #fff;
-    border-radius: 5px;
+    background-color: #1f1f1f; /* Darker section background */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .property-list {
@@ -47,12 +53,12 @@ section {
 }
 
 .property {
-    border: 1px solid #ddd;
+    border: 1px solid #333; /* Dark border */
     padding: 10px;
     width: calc(33.333% - 20px);
     box-sizing: border-box;
     text-align: center;
-    background-color: #007BFF; /* Blue background */
+    background-color: #1f1f1f; /* Dark background */
     border-radius: 10px; /* Rounded corners */
     overflow: hidden; /* Ensures the border-radius works */
 }
@@ -67,11 +73,12 @@ section {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    cursor: pointer; /* Indicates the image is clickable */
 }
 
 .property-description {
     padding: 15px;
-    color: #fff; /* White text */
+    color: #ffffff; /* White text */
 }
 
 .property-description h3 {
@@ -92,27 +99,6 @@ section {
     vertical-align: middle;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.instagram-icon {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-left: 5px;
-}
 /* Full-screen image viewer */
 .fullscreen-viewer {
     display: none; /* Hidden by default */
@@ -144,4 +130,64 @@ footer a {
 
 .close-btn:hover {
     color: #ccc;
+}
+
+/* Contact Form Styles */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-form label {
+    color: #ffffff; /* White text */
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid #333; /* Dark border */
+    border-radius: 5px;
+    background-color: #1f1f1f; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+#contact-form button {
+    padding: 10px;
+    background-color: #007BFF; /* Blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1f1f1f; /* Darker footer background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007BFF; /* Blue hover effect */
+}
+
+.instagram-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 5px;
 }
