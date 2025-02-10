@@ -260,6 +260,9 @@ footer a:hover {
     overflow: hidden;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    background: white;
+    padding: 10px;
+    text-align: center;
 }
 
 /* Hide Map */
@@ -268,11 +271,10 @@ footer a:hover {
     visibility: hidden;
 }
 
-/* Toggle Button */
+/* Toggle Button (Now Positioned Below the Map) */
 .toggle-map-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 280px;
+    margin-top: 10px;
+    width: 100%;
     padding: 8px 15px;
     font-size: 14px;
     background-color: #28a745;
