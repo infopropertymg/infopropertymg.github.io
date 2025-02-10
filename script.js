@@ -21,14 +21,14 @@ function closeFullScreen() {
     fullscreenViewer.style.display = 'none';
 }
 document.getElementById("toggle-map-btn").addEventListener("click", function () {
-    var map = document.getElementById("map-container");
+    var mapContainer = document.getElementById("map-container");
     var button = document.getElementById("toggle-map-btn");
 
-    if (map.classList.contains("hidden")) {
-        map.classList.remove("hidden");
+    if (mapContainer.classList.contains("hidden")) {
+        mapContainer.classList.remove("hidden");
         button.textContent = "Hide Map";
     } else {
-        map.classList.add("hidden");
+        mapContainer.classList.add("hidden");
         button.textContent = "Show Map";
     }
 });
