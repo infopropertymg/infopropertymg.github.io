@@ -41,8 +41,31 @@ nav ul li a:hover {
     color: #ffffff; /* White text on hover */
 }
 
-/* Section Styles */
-section {
+/* Home Section Styles */
+#home {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center-align text */
+}
+
+#home h2 {
+    font-family: 'Georgia', serif; /* Classic serif font */
+    font-size: 2.5rem; /* Larger font size for heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+#home p {
+    font-family: 'Georgia', serif; /* Classic serif font */
+    font-size: 1.2rem; /* Slightly larger font size for paragraph */
+    font-style: italic; /* Italic text for a classic feel */
+    margin: 0; /* Remove default margin */
+}
+
+/* Property Section Styles */
+#properties {
     padding: 20px;
     margin: 20px;
     background-color: #1f1f1f; /* Darker section background */
@@ -50,16 +73,14 @@ section {
 }
 
 .property-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between properties */
 }
 
 .property {
     border: 1px solid #333; /* Dark border */
     padding: 10px;
-    width: calc(33.333% - 20px);
-    box-sizing: border-box;
     text-align: center;
     background-color: #1f1f1f; /* Dark background */
     border-radius: 10px; /* Rounded corners */
@@ -68,12 +89,12 @@ section {
 
 .property-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
     gap: 10px; /* Space between images */
 }
 
 .property-images img {
-    max-width: 100%;
+    width: 100%; /* Make images fill the grid cell */
     height: auto;
     border-radius: 5px;
     cursor: pointer; /* Indicates the image is clickable */
@@ -194,25 +215,27 @@ footer a:hover {
     vertical-align: middle;
     margin-left: 5px;
 }
-/* Home Section Styles */
-#home {
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Black text */
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px; /* Rounded corners */
-    text-align: center; /* Center-align text */
-}
 
-#home h2 {
-    font-family: 'Georgia', serif; /* Classic serif font */
-    font-size: 2.5rem; /* Larger font size for heading */
-    margin-bottom: 10px; /* Space below the heading */
-}
+/* Media Queries for Smartphones */
+@media (max-width: 768px) {
+    .property-list {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
 
-#home p {
-    font-family: 'Georgia', serif; /* Classic serif font */
-    font-size: 1.2rem; /* Slightly larger font size for paragraph */
-    font-style: italic; /* Italic text for a classic feel */
-    margin: 0; /* Remove default margin */
+    .property-images {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for images on mobile */
+    }
+
+    .property-images img {
+        width: 100%; /* Make images larger on mobile */
+        height: auto;
+    }
+
+    .property-description h3 {
+        font-size: 1.5rem; /* Larger font size for headings on mobile */
+    }
+
+    .property-description p {
+        font-size: 1rem; /* Slightly larger font size for text on mobile */
+    }
 }
