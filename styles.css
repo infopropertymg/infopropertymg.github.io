@@ -10,12 +10,25 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    position: relative; /* Required for positioning the WhatsApp link */
 }
 
 .logo img {
     max-width: 100px;
     height: auto;
     margin-bottom: 10px;
+}
+
+/* WhatsApp link styling */
+.whatsapp-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.whatsapp-link img {
+    width: 40px; /* Adjust the size of the WhatsApp logo */
+    height: auto;
 }
 
 nav ul {
