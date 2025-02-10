@@ -170,8 +170,8 @@ section {
 
 /* Footer Styles */
 footer {
-    background-color: #007BFF; /* Blue background */
-    color: #000000; /* Black text */
+    background-color: #1f1f1f; /* Dark background */
+    color: #ffffff; /* White text */
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -180,13 +180,12 @@ footer {
 }
 
 footer a {
-    color: #000000; /* Black text */
+    color: #ffffff; /* White text */
     text-decoration: none;
-    font-weight: bold; /* Make links bold */
 }
 
 footer a:hover {
-    color: #ffffff; /* White text on hover */
+    color: #007BFF; /* Blue hover effect */
 }
 
 .instagram-icon {
