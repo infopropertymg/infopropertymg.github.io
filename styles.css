@@ -10,7 +10,7 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    position: relative; /* Required for positioning the WhatsApp link */
+    position: relative; /* Required for positioning the social links */
 }
 
 .logo img {
@@ -19,16 +19,23 @@ header {
     margin-bottom: 10px;
 }
 
-/* WhatsApp link styling */
-.whatsapp-link {
+/* Social media links styling */
+.social-links {
     position: absolute;
     top: 10px;
     right: 10px;
+    display: flex;
+    gap: 10px; /* Space between icons */
 }
 
-.whatsapp-link img {
-    width: 40px; /* Adjust the size of the WhatsApp logo */
+.social-links .social-link img {
+    width: 30px; /* Adjust the size of the icons */
     height: auto;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-links .social-link:hover img {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
 }
 
 nav ul {
@@ -99,16 +106,4 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.instagram-icon {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-left: 5px;
 }
