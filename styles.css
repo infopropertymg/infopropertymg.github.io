@@ -340,3 +340,23 @@ header h1 {
         max-width: 300px; /* Limit max size */
     }
 }
+.nav-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
